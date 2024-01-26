@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista telefônica</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Tabela para exibir os contatos cadastrados -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaContatos">
+            <!-- As linhas adicionadas aparecerão aqui -->
+        </tbody>
+    </table>
+
+    <!-- Formulário para inserção de novos contatos -->
+    <form id="formContato" action="#">
+        <div class="input-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        </div>
+        <div class="input-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required pattern="\d*"
+                title="Apenas números são permitidos.">
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
